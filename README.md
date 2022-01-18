@@ -1,4 +1,4 @@
-# Script-Pre-processing-Data
+#Script-Pre-processing-Data
 import pandas as pd
 data = pd.read_csv('data fix.csv')
 data.head()
@@ -12,7 +12,7 @@ factory = StopWordRemoverFactory()
 stopwords = factory.get_stop_words()
 print(stopwords)
 
-# import StopWordRemoverFactory class
+#import StopWordRemoverFactory class
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
  factory = StopWordRemoverFactory()
 stopword =  factory.get_stop_words()
@@ -26,7 +26,7 @@ def stopwords():
     return data
 
 stopwords()
-# Import Stopword Factory class
+#Import Stopword Factory class
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 
 #Create factory
@@ -46,7 +46,7 @@ data['text']
 stopwordplus
 
 import re
-# Function to Tokenize words
+#Function to Tokenize words
 def tokenize(text):
     tokens = re.split('\W+', text) #W+ means that either a word character (A-Za-z0-9_) or a dash (-) can go there.
     return tokens
